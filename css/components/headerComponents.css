@@ -1,0 +1,101 @@
+.myapp-header {
+  background-image: url("../../image/banner.jpg"); /*por ja estar dentro de uma pagina usou io ".." para sair dela e ir para a pasta raiz */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.content-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.photo-header {
+  height: 150px;
+  /* padding-bottom: 10px; */
+}
+
+.title-header {
+  font-size: 2.25em;
+  color: #fff;
+}
+.title-header::before,
+.title-header::after {
+  /* 
+  - antes e depois. 
+  - ele não respeita os flex
+  */
+  content: "";
+  height: 2px;
+  width: 180px;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+
+.text-header {
+  color: #fff;
+  font-size: 1.25em;
+  padding: 20px;
+}
+
+.btn-header {
+  background-color: transparent;
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btn-header :hover {
+  background-color: rgba(214, 48, 48, 0.6);
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.nav-mobile {
+  background-image: url(../../image/menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+}
+
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  transition: 400ms;
+  
+}
+
+@media (min-width: 471px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+

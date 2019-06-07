@@ -1,0 +1,23 @@
+.myapp-footer > .content > .golfinho > .photo-footer{
+    height: 250px;
+    transform: translateY(-60px);
+}
+
+.myapp-footer > .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.content > .direitos > .title{
+    font-size: 2.25em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content > .direitos > .direito{
+    font-size: 1.25em;
+    color: #ffffff;
+}
