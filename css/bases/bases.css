@@ -12,3 +12,39 @@ body{
     font-size: 1.25em;
     
 }
+
+.btngit{
+    padding: 50px;
+}
+
+.github{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: bold;
+    border: solid 2px black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.github:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.credito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding: 10px;
+}
+
+.credito > .link{
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+}
