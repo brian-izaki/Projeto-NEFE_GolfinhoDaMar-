@@ -43,7 +43,7 @@
             </div>
         </nav>
         <section class="content-header color-overflow">
-            <img class="photo-header" src="image/dolphin.svg" alt="Imagem da logo golfinho azul saltando do mar.">
+            <img class="photo-header" src="./image/dolphin.svg" alt="Imagem da logo golfinho azul saltando do mar.">
             <h1 class="title-header">Golfinho da maré</h1>
             <p class="text-header">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, dolorum!</p>
             <a href="#" class="btn-header">Conhecer</a>
@@ -53,7 +53,7 @@
     <main class="myapp-main">
         <section class="card-section">
             <div class="cardphoto">
-                <img class="photo" src="image/banner.jpg" alt="maré">
+                <img class="photo" src="./image/banner.jpg" alt="maré">
             </div>
             <div class="cardcontent">
                 <div class="infocontent">
@@ -85,7 +85,7 @@
         <footer class="myapp-footer">
             <div class="content">
                 <div class="golfinho">
-                    <img class="photo-footer" src="/image/golfinho-footer.png" alt="Golfinho saltando">
+                    <img class="photo-footer" src="./image/golfinho-footer.png" alt="Golfinho saltando">
                 </div>
 
                 <div class="social">
@@ -106,7 +106,21 @@
         </footer>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('js/service-worker.js')
+                .then(reg => {
+                    console.log('Registrado com sucesso!');
+                })
+                .catch(err => {
+                    console.log('Erro ao registrar!');
+                })
+            })
+        }
+    </script>
+
+    <!-- <script src="/js/main.js"></script> -->
 </body>
 
 </html>
